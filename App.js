@@ -5,7 +5,11 @@ import {
   StyleSheet,
 } from 'react-native';
 
+import { DrawerNavigator } from 'react-navigation'
+
 import AvatarIcon from './src/components/AvatarIcon'
+
+
 
 export default class App extends Component {
   render() {
