@@ -35,6 +35,6 @@ const styles = StyleSheet.create({
   },
   tipContainer: {
     flex: 5,
-    backgroundColor: '#e1fbf1',
+    backgroundColor: '#c2c2c2',
   },
 });

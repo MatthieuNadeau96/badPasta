@@ -3,13 +3,17 @@ import {
   View,
   Text,
   StyleSheet,
+  Image
 } from 'react-native';
 
 export default class AvatarIcon extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.pic}></View>
+        <Image
+          source={require('../assets/images/pasta.png')}
+          style={{height: 120, width: 120, borderRadius: 60}}
+          />
       </View>
     );
   }
@@ -20,13 +24,10 @@ const styles = StyleSheet.create({
   container: {
     height: 150,
     width: 150,
-    maxHeight: 150,
-    minHeight: 80,
-    maxWidth: 150,
-    minWidth: 80,
-    margin: 'auto',
-    backgroundColor: '#e37e7b',
-    borderRadius: 100,
+    backgroundColor: '#97ed9e',
+    borderRadius: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   pic: {
     backgroundColor: '#ffffff',
