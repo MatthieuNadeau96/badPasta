@@ -3,17 +3,25 @@ import {
   View,
   Text,
   StyleSheet,
-  Button,
 } from 'react-native';
 
 import AvatarIcon from '../components/AvatarIcon'
-
+import { Header, Left, Right, Icon, } from 'native-base'
 
 
 export default class HomeScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Header>
+          <Left>
+            <Icon
+              name="menu"
+              onPress={() => this.props.navigation.openDrawer()}
+              />
+          </Left>
+          <Right></Right>
+        </Header>
         <View style={styles.iconContainer}>
           <AvatarIcon/>
         </View>
