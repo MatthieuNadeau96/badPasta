@@ -21,6 +21,7 @@ export default class HomeScreen extends Component {
             <Icon
               name="menu"
               onPress={() => this.props.navigation.openDrawer()}
+              style={{fontSize: 34}}
               />
           </Left>
           <Body></Body>
