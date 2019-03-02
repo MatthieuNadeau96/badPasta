@@ -12,8 +12,8 @@ export default class SettingsScreen extends Component {
     return (
       <View style={styles.container}>
         <Header
-          style={{ backgroundColor: '#97ed9e'}}
-          androidStatusBarColor="#89d98f"
+          style={{ backgroundColor: '#FE8E46'}}
+          androidStatusBarColor="#df7c3c"
           >
           <Left>
             <Icon

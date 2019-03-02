@@ -28,7 +28,7 @@ export default class App extends Component {
 
 const CustomDrawerComponent = (props) => (
   <SafeAreaView style={{ flex: 1 }}>
-    <View style={{height: 150, backgroundColor: '#97ed9e', alignItems: 'center', justifyContent: 'center'}}>
+    <View style={{height: 150, backgroundColor: '#fef5ec', alignItems: 'center', justifyContent: 'center'}}>
       <Image
         source={require('./src/assets/images/pasta.png')}
         style={{height: 120, width: 120, borderRadius: 60}}

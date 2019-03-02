@@ -3,6 +3,7 @@ import {
   View,
   Text,
   StyleSheet,
+  ScrollView,
 } from 'react-native';
 
 import AvatarIcon from '../components/AvatarIcon'
@@ -14,8 +15,8 @@ export default class HomeScreen extends Component {
     return (
       <View style={styles.container}>
         <Header
-          style={{ backgroundColor: '#97ed9e'}}
-          androidStatusBarColor="#89d98f"
+          style={{ backgroundColor: '#FE8E46'}}
+          androidStatusBarColor="#df7c3c"
           >
           <Left>
             <Icon
@@ -27,15 +28,23 @@ export default class HomeScreen extends Component {
           <Body></Body>
           <Right></Right>
         </Header>
-        <View style={styles.iconContainer}>
-          <AvatarIcon/>
-        </View>
-        <View style={styles.tipContainer}>
-          <Text style={styles.tipTitle}>TIP: </Text>
-          <Text style={styles.tipText}>
-            Proin commodo congue tempus. Donec dapibus, odio quis dapibus volutpat, elit erat suscipit libero, et tempor lacus mauris id nisi. Maecenas lorem arcu, tristique id feugiat fermentum, tincidunt ut ligula. Nam sapien libero, tincidunt vitae tellus at, posuere vehicula ex. Vivamus in lectus ex. Phasellus imperdiet ut ex ac tempus. Ut at fringilla massa. Mauris vitae tempus leo.
-          </Text>
-        </View>
+        <ScrollView>
+          <View style={styles.iconContainer}>
+            <AvatarIcon/>
+          </View>
+          <View style={styles.tipContainer}>
+            <Text style={styles.tipTitle}>Tip: </Text>
+            <Text style={styles.tipText}>
+              Proin commodo congue tempus. Donec dapibus, odio quis dapibus volutpat, elit erat suscipit libero, et tempor lacus mauris id nisi. Maecenas lorem arcu, tristique id feugiat fermentum, tincidunt ut ligula.
+            </Text>
+          </View>
+          <View style={styles.tipContainer}>
+            <Text style={styles.tipTitle}>Tip: </Text>
+            <Text style={styles.tipText}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec risus vel odio fringilla tempus vel sed erat. Quisque maximus purus sit amet fermentum egestas. Suspendisse tempus sagittis enim sed suscipit. Sed mollis magna et dolor feugiat, vel rutrum arcu pretium. Vestibulum vestibulum urna viverra tempor faucibus. Donec tristique justo in orci pretium hendrerit. Nulla viverra velit vel lacus iaculis, nec pulvinar nunc fermentum. Pellentesque posuere lorem sit amet nisi ornare, vel pulvinar risus condimentum. Mauris porta eros vitae velit tincidunt venenatis. Nam eget viverra neque, et faucibus purus. Quisque ultrices aliquet tortor id efficitur. Nunc varius dapibus massa, id blandit libero consectetur a. Integer vel gravida mauris. Vivamus consequat varius est, a bibendum ante sodales ut. Mauris malesuada odio a mauris consectetur porta.
+            </Text>
+          </View>
+        </ScrollView>
       </View>
     );
   }
@@ -47,20 +56,25 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     flex: 3,
-    backgroundColor: '#9a9a9a',
+    paddingVertical: 30,
+    backgroundColor: '#ffffff',
     justifyContent: 'center',
     alignItems: 'center',
   },
   tipContainer: {
-    flex: 5,
-    padding: 15,
-    backgroundColor: '#c2c2c2',
+    flex: 2,
+    alignItems: 'flex-start',
+    paddingVertical: 30,
+    paddingHorizontal: 15,
+    backgroundColor: '#f9f9f9',
   },
   tipTitle: {
     fontSize: 26,
     fontWeight: 'bold',
+    color: '#424242',
   },
   tipText: {
-    fontSize: 20,
+    fontSize: 18,
+    color: '#424242',
   }
 });
