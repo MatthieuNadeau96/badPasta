@@ -30,7 +30,12 @@ export default class HomeScreen extends Component {
         <View style={styles.iconContainer}>
           <AvatarIcon/>
         </View>
-        <View style={styles.tipContainer}></View>
+        <View style={styles.tipContainer}>
+          <Text style={styles.tipTitle}>TIP: </Text>
+          <Text style={styles.tipText}>
+            Proin commodo congue tempus. Donec dapibus, odio quis dapibus volutpat, elit erat suscipit libero, et tempor lacus mauris id nisi. Maecenas lorem arcu, tristique id feugiat fermentum, tincidunt ut ligula. Nam sapien libero, tincidunt vitae tellus at, posuere vehicula ex. Vivamus in lectus ex. Phasellus imperdiet ut ex ac tempus. Ut at fringilla massa. Mauris vitae tempus leo.
+          </Text>
+        </View>
       </View>
     );
   }
@@ -48,6 +53,14 @@ const styles = StyleSheet.create({
   },
   tipContainer: {
     flex: 5,
+    padding: 15,
     backgroundColor: '#c2c2c2',
   },
+  tipTitle: {
+    fontSize: 26,
+    fontWeight: 'bold',
+  },
+  tipText: {
+    fontSize: 20,
+  }
 });
