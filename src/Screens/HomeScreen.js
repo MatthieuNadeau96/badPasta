@@ -6,20 +6,24 @@ import {
 } from 'react-native';
 
 import AvatarIcon from '../components/AvatarIcon'
-import { Header, Left, Right, Icon, } from 'native-base'
+import { Header, Left, Body, Right, Icon, } from 'native-base'
 
 
 export default class HomeScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Header>
+        <Header
+          style={{ backgroundColor: '#97ed9e'}}
+          androidStatusBarColor="#89d98f"
+          >
           <Left>
             <Icon
               name="menu"
               onPress={() => this.props.navigation.openDrawer()}
               />
           </Left>
+          <Body></Body>
           <Right></Right>
         </Header>
         <View style={styles.iconContainer}>
