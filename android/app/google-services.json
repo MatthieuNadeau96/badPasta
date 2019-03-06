@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "92657779166",
+    "firebase_url": "https://badpasta-80332.firebaseio.com",
+    "project_id": "badpasta-80332",
+    "storage_bucket": "badpasta-80332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92657779166:android:ecfafcbbdb6cefe6",
+        "android_client_info": {
+          "package_name": "com.badpasta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92657779166-74j9slcdmk7ridjl3chfefem607e4a4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBztIORPGm6YBhBe3safvURwHTfMMDly14"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
